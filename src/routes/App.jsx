@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, BrowserRouter as Switch, Route } from 'react-router-dom'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Layout from '@containers/Layout'
 import Login from '@containers/Login'
 import NotFound from '@pages/NotFound'

@@ -1,6 +1,8 @@
 import React from 'react'
-import '../../sass/_login.scss'
-import Header from '../components/Header'
+import Logo from '@logos/POTENTIAL_ENIGMA.png'
+import GoogleLogo from '@logos/google.png'
+import Header from '@components/Header'
+import Footer from '@components/Footer'
 
 const Login = () => {
   return (
@@ -8,7 +10,7 @@ const Login = () => {
       <Header />
       <main className="home">
         <section className="logo-container">
-          <img className="logo" src="./assets/img/POTENTIAL ENIGMA.png" alt="POTENTIAL ENIGMA"/>
+          <img className="logo" src={Logo} alt="POTENTIAL ENIGMA"/>
         </section>
 
         <section className="container">
@@ -17,12 +19,12 @@ const Login = () => {
               <h2>Bienvenid@ 👋</h2>
               <h5>¿Qué deseas hacer?</h5>
               <h6>Iniciar sesión</h6>
-              <button><a href="./public/gestion_usuarios/gestion_usuarios.html"><img src="./assets/img/google.png" alt="Google logo"/>INICIAR SESIÓN CON GOOGLE</a></button>
-              <div id="app">Button React</div>
+              <button><a href="*"><img src={GoogleLogo} alt="Google logo"/>INICIAR SESIÓN CON GOOGLE</a></button>
             </div>
           </div>
         </section>
       </main>
+      <Footer/>
     </>
   )
 }
