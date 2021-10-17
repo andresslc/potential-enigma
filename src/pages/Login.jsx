@@ -1,8 +1,9 @@
 import React from 'react'
 import Logo from '@logos/POTENTIAL_ENIGMA.png'
-import GoogleLogo from '@logos/google.png'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
+import GoogleLoginButton from '@components/GoogleLoginButton'
+import GoogleLogOutButton from '@components/GoogleLogOutButton'
 
 const Login = () => {
   return (
@@ -19,7 +20,9 @@ const Login = () => {
               <h2>Bienvenid@ 👋</h2>
               <h5>¿Qué deseas hacer?</h5>
               <h6>Iniciar sesión</h6>
-              <button><a href="*"><img src={GoogleLogo} alt="Google logo"/>INICIAR SESIÓN CON GOOGLE</a></button>
+              {/* <button><a href="*"><img src={GoogleLogo} alt="Google logo"/>INICIAR SESIÓN CON GOOGLE</a></button> */}
+              <GoogleLoginButton />
+              {/* <GoogleLogOutButton /> */}
             </div>
           </div>
         </section>

@@ -11,9 +11,9 @@ const Header = () => {
       <div className="menu">
         <nav>
           <ul>
-            <li><a href="*">Gestión de usuarios</a></li>
-            <li><a href="./public/">Administrador de productos</a></li>
-            <li><a href="./public/admin_ventas/admin_ventas.html">Administrador de ventas</a></li>
+            <li><a href="/gestion-usuarios">Gestión de usuarios</a></li>
+            <li><a href="/admin-productos">Administrador de productos</a></li>
+            <li><a href="/admin-ventas">Administrador de ventas</a></li>
           </ul>
         </nav>
       </div>
