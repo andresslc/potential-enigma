@@ -2,9 +2,11 @@ import React from 'react'
 
 const NewAddButton = (props) => {
   return (
-    <button className="New-Add-Btn">
+    <a href={props.link}>
+      <button className="New-Add-Btn">
       + {props.name}
-    </button>
+      </button>
+    </a>
   )
 }
 

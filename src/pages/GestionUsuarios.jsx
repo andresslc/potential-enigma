@@ -21,7 +21,7 @@ const GestionUsuarios = () => {
         <GU_Card />
         <GU_Card />
         <GU_Card />
-        <GU_Card />
+
       </main>
     </>
   )

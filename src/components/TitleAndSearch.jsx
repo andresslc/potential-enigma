@@ -16,7 +16,7 @@ const TitleAndSearch = (props) => {
           <input type="search" id="searchBar" name="searchBar" placeholder="Escribe aquí tu búsqueda..." />
         </div>
         <div className="Btns-container">
-          <NewAddButton name={props.nameAddButton}/>
+          <NewAddButton name={props.nameAddButton} link={props.link}/>
           <SSButton name="Buscar"/>
         </div>
       </div>

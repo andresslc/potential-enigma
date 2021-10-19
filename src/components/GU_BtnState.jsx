@@ -1,6 +1,6 @@
 import React from 'react'
 
-const BtnState = (props) => {
+const GU_BtnState = (props) => {
   return (
     <button className="BtnState">
       {props.name}
@@ -8,4 +8,4 @@ const BtnState = (props) => {
   )
 }
 
-export { BtnState }
+export { GU_BtnState }

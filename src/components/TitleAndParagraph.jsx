@@ -1,13 +1,15 @@
 import React from 'react'
 
-const TitleAndParagraph = () => {
+const TitleAndParagraph = (props) => {
   return (
-    <section className="TitleAndSearch-container">
-      <div className="Title-container">
-        <h2>{props.title}</h2>
-        <p>{props.paragraph}</p>
-      </div>
-    </section>
+    <>
+      <section className="TitleAndSearch-container">
+        <div className="Title-container">
+          <h2>{props.title}</h2>
+          <p>{props.paragraph}</p>
+        </div>
+      </section>
+    </>
   )
 }
 

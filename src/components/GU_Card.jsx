@@ -1,11 +1,11 @@
 import React from 'react'
-import { BtnState } from './BtnState'
+import { GU_BtnState } from './GU_BtnState'
 import configSettingsIcon from '@icons/config_settings.png'
 
 const GU_Card = () => {
   return (
-    <div className="GU-Card-Container">
-        <div className="GU-Left">
+    <div className="Card-Container">
+        <div className="Left">
           <ul>
             <li>
               <h6>ID: </h6> <p>007</p>
@@ -21,9 +21,9 @@ const GU_Card = () => {
             </li>
           </ul>
         </div>
-        <div className="GU-Right">
-          <BtnState name="Pendiente"/>
-          <img src={configSettingsIcon} alt="Icono de ajustes" />
+        <div className="Right">
+          <GU_BtnState name="Pendiente"/>
+          <a href="/editar-usuario"><img src={configSettingsIcon} alt="Icono de ajustes"/></a>
         </div>
     </div>
   )
