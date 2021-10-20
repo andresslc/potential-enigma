@@ -37,8 +37,8 @@ const FormAndBtn_Venta = () => {
 
       <div className='form-input'>
         <label htmlFor='estado'><h6>Estado</h6></label>
-        <select className='form-input-size form-input-select' defaultValue={'DEFAULT'} required>
-          <option disabled value='DEFAULT' name='estado'>Elige el estado de la venta</option>
+        <select name='estado' className='form-input-size form-input-select' defaultValue={'DEFAULT'} required>
+          <option disabled value='DEFAULT'>Elige el estado de la venta</option>
           <option value='Entregada'>Entregada</option>
           <option value='En proceso'>En proceso</option>
           <option value='Cancelada'>Cancelada</option>
@@ -62,8 +62,8 @@ const FormAndBtn_Venta = () => {
       
       <div className='form-input'>
         <label htmlFor='vendedor'><h6>Vendedor</h6></label>
-        <select className='form-input-size form-input-select' defaultValue={'DEFAULT'} required>
-          <option disabled value='DEFAULT' name='vendedor'>Elige el nombre del vendedor</option>
+        <select name='vendedor' className='form-input-size form-input-select' defaultValue={'DEFAULT'} required>
+          <option disabled value='DEFAULT'>Elige el nombre del vendedor</option>
           <option value='Nombre 1'>Nombre 1</option>
           <option value='Nombre 2'>Nombre 2</option>
         </select>
