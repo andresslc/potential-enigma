@@ -1,16 +1,19 @@
 import React, { useRef } from 'react'
 import { CancelButton } from '@components/CancelButton'
 import { SaveButton } from '@components/SaveButton'
+import axios from 'axios'
 
 const FormAndBtn_Venta = () => {
   const form = useRef(null)
-
+  const fecha = Date()
+  
   const handleSubmit = (event) => {
     event.preventDefault()
     const formData = new FormData(form.current)
     const data = {
+      fecha,
       id_venta: formData.get('id_venta'),
-      id: formData.get('id'),
+      _id: formData.get('id'),
       estado: formData.get('estado'),
       nombre: formData.get('nombre'),
       cc: formData.get('cc'),
@@ -20,6 +23,13 @@ const FormAndBtn_Venta = () => {
       vlr_total: formData.get('vlr_total'),
     }
     console.log(data)
+    axios.post('http://localhost:3003/nueva-venta', data)
+      .then(res => {
+        console.log(`Exito: ${data}`)
+      })
+      .catch(err => {
+        console.log(err)
+      })
   }
 
   return (
@@ -32,7 +42,7 @@ const FormAndBtn_Venta = () => {
       
       <div className='form-input'>
         <label htmlFor='id'><h6>ID</h6></label>
-        <input type='number' name='id' placeholder='Escribe aquí tu ID...' className='form-input-size' required />
+        <input type='number' name='id' placeholder='ID' disabled className='form-input-size' required />
       </div>
 
       <div className='form-input'>

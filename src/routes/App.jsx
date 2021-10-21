@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Layout from '@containers/Layout'
 import Login from '@pages/Login'
@@ -11,9 +11,18 @@ import { NuevoProducto } from '@pages/NuevoProducto'
 import { EditProduct } from '@pages/EditProduct'
 import { NuevaVenta } from '@pages/NuevaVenta'
 import { EditVenta } from '@pages/EditVenta'
+import axios from 'axios'
 import '@styles/main.scss'
 
 const App = () => {
+  const [ventas, setVenta] = useState([])
+  useEffect(() => {
+    axios
+      .get('http://localhost:3003/ventas')
+      .then(res => setVenta(res.data.ventas))
+      .catch(error => console.log(error))
+  }, [])
+
   return (
     <BrowserRouter>
       <Layout>
@@ -27,7 +36,7 @@ const App = () => {
           <Route exact path="/nuevo-producto" component={NuevoProducto} />
           <Route exact path="/editar-producto" component={EditProduct} />
 
-          <Route exact path="/admin-ventas" component={AdminVentas} />
+          <Route exact path="/admin-ventas" render={() => <AdminVentas ventas={ventas}/> } />
           <Route exact path="/nueva-venta" component={NuevaVenta} />
           <Route exact path="/editar-venta" component={EditVenta} />
           

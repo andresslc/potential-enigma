@@ -1,0 +1,32 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Potential Enigma Backend",
+  "main": "backend.js",
+  "scripts": {
+    "start": "nodemon backend.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edgeorgie/potential-enigma-personal.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "mongodb"
+  ],
+  "author": "Edwin Jorge <ed.jorge1122@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edgeorgie/potential-enigma-personal/issues"
+  },
+  "homepage": "https://github.com/edgeorgie/potential-enigma-personal#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.11",
+    "mongoose-auto-increment": "^5.0.1",
+    "nodemon": "^2.0.14"
+  }
+}
