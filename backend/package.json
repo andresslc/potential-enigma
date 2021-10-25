@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Potential Enigma Backend",
   "main": "backend.js",
+  "engines": {
+    "node": ">=12.7.0"
+  },
+  
   "scripts": {
     "start": "nodemon backend.js",
     "build": "webpack --mode production",
