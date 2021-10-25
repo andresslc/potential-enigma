@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Potential Enigma's app: manage your business.",
   "main": "src/scripts/index.js",
-  "engines": {
-    "node": "^12.x"
-  },
   "scripts": {
     "start": "webpack serve --open",
     "build": "webpack --mode production"
