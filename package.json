@@ -4,9 +4,8 @@
   "description": "Potential Enigma Backend",
   "main": "backend.js",
   "engines": {
-    "node": "12.x"
+    "node": "^12.x"
   },
-  
   "scripts": {
     "start": "node backend.js",
     "build": "webpack --mode production",
