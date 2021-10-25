@@ -4,7 +4,7 @@
   "description": "Potential Enigma's app: manage your business.",
   "main": "src/scripts/index.js",
   "engines": {
-    "node": ">=12.7.0"
+    "node": "12.7.0"
   },
   "scripts": {
     "start": "webpack serve --open",
