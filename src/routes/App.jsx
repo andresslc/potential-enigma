@@ -15,6 +15,14 @@ import axios from 'axios'
 import '@styles/main.scss'
 
 const App = () => {
+  const [usuarios, setUsuarios] = useState([])
+  useEffect(() => {
+    axios
+      .get('http://localhost:3003/usuarios')
+      .then(res => setUsuarios(res.data.usuarios))
+      .catch(error => console.log(error))
+  }, [])
+
   const [ventas, setVenta] = useState([])
   useEffect(() => {
     axios
@@ -23,16 +31,25 @@ const App = () => {
       .catch(error => console.log(error))
   }, [])
 
+  const [productos, setProductos] = useState([])
+  useEffect(() => {
+    axios
+      .get('http://localhost:3003/productos')
+      .then(res => setProductos(res.data.productos))
+      .catch(error => console.log(error))
+  }, [])
+
+
   return (
     <BrowserRouter>
       <Layout>
         <Switch>
           <Route exact path="/" component={Login} />
 
-          <Route exact path="/gestion-usuarios" component={GestionUsuarios} />
-          <Route exact path="/editar-usuario" component={EditUser} />
+          <Route exact path="/gestion-usuarios" render={() => <GestionUsuarios usuarios={usuarios} /> } />
+          <Route exact path={"/editar-usuario/:usuarioId"} component={EditUser} />
 
-          <Route exact path="/admin-productos" component={AdminProductos} />
+          <Route exact path="/admin-productos" render={() => <AdminProductos productos={productos} />} />
           <Route exact path="/nuevo-producto" component={NuevoProducto} />
           <Route exact path="/editar-producto" component={EditProduct} />
 

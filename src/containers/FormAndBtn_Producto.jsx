@@ -1,21 +1,31 @@
 import React, { useRef } from 'react'
 import { CancelButton } from '@components/CancelButton'
 import { SaveButton } from '@components/SaveButton'
+import axios from 'axios'
 
 const FormAndBtn_Producto = () => {
   const form = useRef(null)
+  const fecha = Date()
 
   const handleSubmit = (event) => {
     event.preventDefault()
     const formData = new FormData(form.current)
     const data = {
-      id: formData.get('id'),
+      fecha,
+      _id: formData.get('id'),
       nombre: formData.get('nombre'),
       estado: formData.get('estado'),
       vlr_unitario: formData.get('vlr_unitario'),
-      descripcion: formData.get('desc'),
+      desc: formData.get('desc'),
     }
     console.log(data)
+    axios.post('http://localhost:3003/nuevo-producto', data)
+      .then(res => {
+        console.log(`Exito: ${data}`)
+      })
+      .catch(err => {
+        console.log(err)
+      })
   }
 
   return (
@@ -23,7 +33,7 @@ const FormAndBtn_Producto = () => {
       
       <div className='form-input'>
         <label htmlFor='id'><h6>ID</h6></label>
-        <input type='number' name='id' placeholder='Escribe aquí tu ID...' className='form-input-size' required />
+        <input type='number' name='id' placeholder='ID' disabled className='form-input-size' required />
       </div>
 
       <div className='form-input'>
@@ -44,10 +54,9 @@ const FormAndBtn_Producto = () => {
       <div className='form-input'>
         <label htmlFor='estado'><h6>Estado</h6></label>
         <select name='estado' className='form-input-size form-input-select' defaultValue={'DEFAULT'} required>
-          <option disabled value='DEFAULT'>Elige el estado de la venta</option>
-          <option value='Entregada'>Entregada</option>
-          <option value='En proceso'>En proceso</option>
-          <option value='Cancelada'>Cancelada</option>
+          <option disabled value='DEFAULT'>Elige el estado del producto</option>
+          <option value='Disponible'>Disponible</option>
+          <option value='No disponible'>No disponible</option>
         </select>
       </div>
       
