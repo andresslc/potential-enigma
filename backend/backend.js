@@ -152,7 +152,7 @@ app.post('/nueva-venta', (req, res) => {
 
 // CONEXIÓN
 
-mongoose.connect('mongodb+srv://dbGeorgieForPE:SbSN5S81f5@cluster0.4gron.mongodb.net/dbPE?retryWrites=true&w=majority', (err, res) => {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://dbGeorgieForPE:SbSN5S81f5@cluster0.4gron.mongodb.net/dbPE?retryWrites=true&w=majority', (err, res) => {
   if (err) {
     return console.log(`Error: ${err} `);
   }
@@ -162,3 +162,7 @@ mongoose.connect('mongodb+srv://dbGeorgieForPE:SbSN5S81f5@cluster0.4gron.mongodb
     console.log(`API running ${port}`);
   })
 })
+
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static('dist/'))
+}
