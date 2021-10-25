@@ -4,14 +4,14 @@
   "description": "Potential Enigma Backend",
   "main": "backend.js",
   "engines": {
-    "node": "^12.7.0"
+    "node": "12.x"
   },
   
   "scripts": {
     "start": "nodemon backend.js",
     "build": "webpack --mode production",
     "install-client": "cd dist && npm install",
-    "heroku-postbuild": "npm run install-client && npm run build"
+    "heroku-postbuild": "ng build --prod"
   },
   "repository": {
     "type": "git",
