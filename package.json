@@ -5,9 +5,8 @@
   "main": "src/scripts/index.js",
   "scripts": {
     "start": "webpack serve --open",
-    "build": "webpack --mode production",
-    "install-client": "cd dist && npm install",
-    "heroku-postbuild": "npm run install-client && npm run build"
+    "build": "webpack --mode production"
+
   },
   "repository": {
     "type": "git",
