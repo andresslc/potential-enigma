@@ -1,0 +1,41 @@
+.TitleAndSearch-container {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  padding: 25px 0 25px 0;
+  width: 90vw;
+  height: 20vh;
+  border-bottom: 1px solid $primary-light;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  .Search-container {
+    justify-self: end;
+    
+    .Search-icon{
+      width: 32px;
+      height: 32px;
+    }
+
+    .SearchInput-container {
+      display: flex;
+      border: 1px solid $primary-light;
+      border-radius: 15px;
+      align-items: center;
+      width: 520px;
+      height: 40px;
+      padding: 2px 8px;
+      margin-top: 10px;
+      #searchBar {
+        border: none;
+        outline: none;
+        width: 90%;
+        margin-left: 8px;
+      }
+    }
+    .Btns-container {
+      display: flex;
+      justify-content: end;
+      margin-top: 30px;
+    }
+  }
+
+}
