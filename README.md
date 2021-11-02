@@ -1,5 +1,5 @@
 # Potential Enigma 🧐
-This is the official repo for our group at MisiónTIC 2022 - UdeA.
+Check the info:
 
 ```
 $black: #303030;
