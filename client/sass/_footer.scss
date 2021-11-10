@@ -1,0 +1,13 @@
+footer {
+  display: grid;
+  justify-self: center;
+  align-items: center;
+  height: 10vh;
+  text-align: center;
+
+  p {
+    margin: 10px;
+    color: $primary-light;
+  }
+}
+

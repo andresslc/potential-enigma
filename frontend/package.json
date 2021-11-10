@@ -1,0 +1,54 @@
+{
+  "name": "potential-enigma",
+  "version": "1.0.0",
+  "description": "Potential Enigma's app: manage your business.",
+  "main": "src/scripts/index.js",
+  "scripts": {
+    "start": "webpack serve --open",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edgeorgie/potential-enigma-personal.git"
+  },
+  "keywords": [
+    "react",
+    "javascript"
+  ],
+  "author": "Edwin Jorge <ed.jorge1122@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/edgeorgie/potential-enigma-personal/issues"
+  },
+  "homepage": "https://github.com/edgeorgie/potential-enigma-personal#readme",
+  "dependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/preset-react": "^7.14.5",
+    "axios": "^0.23.0",
+    "babel-loader": "^8.2.2",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.2",
+    "mongoose": "^6.0.11",
+    "nodemon": "^2.0.14",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-google-login": "^5.2.2",
+    "react-router": "^5.2.1",
+    "react-router-dom": "^5.3.0",
+    "regenerator-runtime": "^0.13.9",
+    "webpack": "^5.58.2",
+    "webpack-cli": "^4.9.0",
+    "webpack-dev-server": "^4.3.1"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.15.8",
+    "css-loader": "^6.4.0",
+    "mini-css-extract-plugin": "^2.4.2",
+    "sass": "^1.43.2",
+    "sass-loader": "^12.2.0",
+    "style-loader": "^3.3.0"
+  }
+}

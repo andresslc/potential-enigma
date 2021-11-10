@@ -1,0 +1,7 @@
+<<<<<<< HEAD
+/node_modules
+=======
+/sass
+node_modules
+/backend/node_modules
+>>>>>>> 8cec035a400a6f2b7f3fbbd42e496dcb5de8539f

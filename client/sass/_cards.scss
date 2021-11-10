@@ -1,0 +1,81 @@
+// GESTION DE USUARIO & ADMIN PRODUCTOS CARD - GU_Card & AP_CARD
+
+.Card-Container {
+  display: grid;
+  background-color: $white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 0px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 30vh;
+  text-align: center;
+  
+  .Left {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    ul {
+      display: inline;
+      justify-content: space-around;
+      li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 15px 0;
+      }
+    }
+  }
+
+  .Right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 30px 20px;
+    img {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+
+// ADMIN VENTAS CARD - AV_CARD
+
+.AV_Card-Container {
+  display: grid;
+  background-color: $white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 0px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 50vh;
+  text-align: center;
+  
+  .AV_Card-Left {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    ul {
+      display: inline;
+      justify-content: space-around;
+      li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 15px 0;
+      }
+    }
+  }
+
+  .AV_Card-Right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 30px 20px;
+    img {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
