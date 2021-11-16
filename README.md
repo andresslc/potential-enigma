@@ -1,13 +1,13 @@
 # Potential Enigma 🧐
 
-``` 
+### Who we are?
 
-###Who we are?
+- Andrés Leyva | DB Admin & Developer. 
+Me encuentro estudiando Ingeniería Electrónica, entre a esa carrera porque me fascino la robótica y como en ella se unían la programación con las piezas mecánicas para dar vida a esa estructura metálica. Desde niño soy bastante curioso por como funciona todo y eso me ha hecho querer aprender de todo, en especial la programación porque cada algoritmo es un reto lógico el cual me encanta descifrar.
 
-``` 
-Andrés Leyva | DB Admin & Developer. Me encuentro estudiando Ingeniería Electrónica, entre a esa carrera porque me fascino la robótica y como en ella se unían la programación con las piezas mecánicas para dar vida a esa estructura metálica. Desde niño soy bastante curioso por como funciona todo y eso me ha hecho querer aprender de todo, en especial la programación porque cada algoritmo es un reto lógico el cual me encanta descifrar.
+- Evelyn Penagos | Analyst & Developer. 
+Soy estudiante de Ingeniería Electrónica, quiero desempeñarme en el área de la Biomedicina, me interesa la programación y sus aplicaciones en los sistemas o equipos biológicos, y sus demás aplicaciones. Soy perseverante, organizada y creativa en la resolución de problemas, además de curiosa en el aprendizaje, de modo que me gustaría aprender, conocer y desarrollar aplicaciones móviles eficientes y funcionales.
 
-Evelyn Penagos | Analyst & Developer. Soy estudiante de Ingeniería Electrónica, quiero desempeñarme en el área de la Biomedicina, me interesa la programación y sus aplicaciones en los sistemas o equipos biológicos, y sus demás aplicaciones. Soy perseverante, organizada y creativa en la resolución de problemas, además de curiosa en el aprendizaje, de modo que me gustaría aprender, conocer y desarrollar aplicaciones móviles eficientes y funcionales.
 
 
 Check the info:
