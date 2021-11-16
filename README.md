@@ -6,9 +6,9 @@
 Me encuentro estudiando Ingeniería Electrónica, entre a esa carrera porque me fascino la robótica y como en ella se unían la programación con las piezas mecánicas para dar vida a esa estructura metálica. Desde niño soy bastante curioso por como funciona todo y eso me ha hecho querer aprender de todo, en especial la programación porque cada algoritmo es un reto lógico el cual me encanta descifrar.
 
 - Evelyn Penagos | Analyst & Developer. 
-Soy estudiante de Ingeniería Electrónica, quiero desempeñarme en el área de la Biomedicina, me interesa la programación y sus aplicaciones en los sistemas o equipos biológicos, y sus demás aplicaciones. Soy perseverante, organizada y creativa en la resolución de problemas, además de curiosa en el aprendizaje, de modo que me gustaría aprender, conocer y desarrollar aplicaciones móviles eficientes y funcionales.
+Soy estudiante de Ingeniería Electrónica, quiero desempeñarme en el área de la Biomedicina, me interesa la programación y sus aplicaciones en los sistemas o equipos biológicos, y sus demás aplicaciones. Soy perseverante, organizada y creativa en la resolución de problemas. Tambien soy curiosa en el aprendizaje, y en virtud a ello me gustaria conocer, aprender y desarrollar aplicaciones móviles que sean eficientes  y funcionales.
 
-- Jhon Palacio | SCRUM Master & Developer.
+- Jhon Palacio | Maestro y desarrollador SCRUM.
 Actualmente me encuentro estudiando Ingeniería Civil con ganas de homologar a Sistemas, me apasiona el desarrollo de web, soy creativo, responsable, didactico, organizado, me gustaria aprender mucho más sobre el mundo de la programación debido al gran avance que ha tenido en la actualidad.
 
 
